@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="contain mx-auto px-4">
-        <h1 class="text-xl text-gray-800 font-medium mb-3">Overview</h1>
+        <h1 class="text-xl text-gray-800 font-medium my-3">Overview</h1>
         <p class="py-2 text-gray-800">
             Formed in 2000 and legally constituted as a Trust in November 2001 under Notarial Deed of Trust MA1669/2001, the Zimbabwe Environmental Law Association (ZELA) is a premier public interest environmental law group based in Zimbabwe. As a public interest non-governmental organisation we seek to promote environmental justice, sustainable and equitable use of natural resources, democracy and good governance in the natural resources and environment sector.
         </p>

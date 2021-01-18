@@ -15,7 +15,7 @@
         }
 
         .wrapper{
-            min-height: 85vh;
+            min-height: 78vh;
         }
 
         .logo{
