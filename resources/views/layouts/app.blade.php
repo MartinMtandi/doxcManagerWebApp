@@ -94,7 +94,7 @@
         <div class="contain mx-auto">
             <div class="flex text-gray-700 justify-between">
                 <p>&#169;{{__('Copyright ')}}<script>document.write(new Date().getFullYear())</script>{{__(",")}} {{__('All rights reserved')}}</p>
-                <p>Developed by <a class="text-indigo-600 hover:border-b hover:border-indigo-600" href="https://bintaglobal.com/">Binta Global</a>
+                <p>Developed by <a class="text-indigo-600 hover:border-b hover:border-indigo-600" href="https://bintaglobal.com/" target="_blank">Binta Global Technologies</a>
             </div>
         </div>
     </footer>
