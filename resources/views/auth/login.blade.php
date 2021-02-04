@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="flex justify-center">
-        <div class="w-5/12 bg-white p-6 rounded-lg">
+        <div class="w-full md:w-5/12 bg-white p-6 mx-3 md:mx-0 rounded-lg">
             @if(session('error'))
                 <div class="bg-red-500 p-4 rounded mb-6 text-white flex items-center">
                     <div>

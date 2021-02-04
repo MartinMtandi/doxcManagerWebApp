@@ -3,7 +3,7 @@
   <div class="contain mx-auto">
     @if($documents->count())
     <div class="grid grid-cols-12 gap-8">
-        <div class="col-span-9">
+        <div class="col-span-12 md:col-span-8 lg:col-span-9">
                 @foreach ($documents as $document)
                     <div class="border rounded mb-10 border-light">
                         <div class="p-4">
@@ -52,7 +52,7 @@
                 @endforeach
                 {{$documents->links()}}
         </div>
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-4 lg:col-span-3 px-3 md:px-0">
             <div>
                 <div class="mb-8">
                     @if($popular->count())

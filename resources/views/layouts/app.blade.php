@@ -42,10 +42,16 @@
         .border-light:hover{
             border: 1px solid #81BD00;
         }
+
+        @media only screen and (max-width: 600px) {
+            .contain{
+                 max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="p-3 bg-white border border-b mb-6">
+    {{-- <header class="p-3 bg-white border border-b mb-6">
         <nav class="flex justify-between contain mx-auto">
             <ul class="flex items-center">
                 <li class="p-2">
@@ -86,15 +92,15 @@
                 @endguest
             </ul>
         </nav>
-    </header>
+    </header> --}}
     <div class="wrapper">
         @yield('content')
     </div>
-    <footer class="py-6 bg-gray-100 border-t">
+    <footer class="py-6 bg-gray-100 border-t px-3 md:px-0">
         <div class="contain mx-auto">
-            <div class="flex text-gray-700 justify-between">
+            <div class="md:flex text-gray-700 justify-between text-center">
                 <p>&#169;{{__('Copyright ')}}<script>document.write(new Date().getFullYear())</script>{{__(",")}} {{__('All rights reserved')}}</p>
-                <p>Developed by <a class="text-indigo-600 hover:border-b hover:border-indigo-600" href="https://bintaglobal.com/" target="_blank">Binta Global Technologies</a>
+                <p>Developed by <a class="text-indigo-600 hover:border-b hover:border-indigo-600" href="https://aldmut.com/" target="_blank">{{__('Aldmut Media')}}</a>
             </div>
         </div>
     </footer>
