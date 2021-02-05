@@ -31,8 +31,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-t p-4 bg-gray-100 flex items-center">
-                        <form action="{{route('dashboard.document', $document)}}" method="post" class="inline">
+                    <div class="border-t p-4 bg-gray-100 md:flex items-center">
+                        <form action="{{route('dashboard.document', $document)}}" method="post" class="inline mr-2 md:mr-0">
                             @csrf
                             @method('DELETE')
                             <button class="flex items-center px-3 mr-3 py-1 rounded bg-red-600 text-white hover:bg-red-500">
@@ -41,7 +41,7 @@
                             </button>
                         </form>
                         @if($document->featured === '0')
-                        <form action="{{route('dashboard.document', $document)}}" method="post" class="inline">
+                        <form action="{{route('dashboard.document', $document)}}" method="post" class="inline md:px-2">
                             @csrf
                             <button type="submit" class="flex items-center px-3 mr-3 py-1 rounded bg-green-600 text-white hover:bg-green-500">
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-flag"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg></p>
@@ -49,7 +49,7 @@
                             </button>
                         </form>
                         @else
-                        <form action="{{route('dashboard.document', $document)}}" method="post" class="inline">
+                        <form action="{{route('dashboard.document', $document)}}" method="post" class="inline md:px-2">
                             @csrf
                             <button type="submit" class="flex items-center px-3 mr-3 py-1 rounded bg-gray-700 text-white hover:bg-gray-600">
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-flag"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg></p>

@@ -55,9 +55,9 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-white">
+    <header class="bg-white mb-16 py-2">
         <div class="contain mx-auto">
-            <div class="mx-3 md:mx-0 flex flex-wrap items-center mb-16 lg:py-0 py-2 ">
+            <div class="mx-3 md:mx-0 flex flex-wrap items-center lg:py-0 py-2 ">
                 <div class="flex-1 flex justify-between items-center hidden md:block">
                     <a href={{route('dashboard')}}><img src={{asset('img/logo.png')}} alt="Logo" class="logo" /></a>
                 </div>
@@ -85,9 +85,9 @@
                 @guest
                     <nav>
                         <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-                        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="{{route('home')}}">{{__('Home')}}</a></li>
-                        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="{{route('about')}}">{{__('About Us')}}</a></li>
-                        <li><a class="lg:p-4 text-sm px-4 py-2 my-2 rounded bg-gray-700 text-white hover:bg-gray-600" href="{{route('login')}}">{{__('SIGN IN')}}</a></li>
+                            <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="{{route('home')}}">{{__('Home')}}</a></li>
+                            <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="{{route('about')}}">{{__('About Us')}}</a></li>
+                            <li><a class="lg:p-4 text-sm px-4 py-2 rounded bg-gray-700 text-white hover:bg-gray-600" href="{{route('login')}}">{{__('SIGN IN')}}</a></li>
                         </ul>
                     </nav>
                 @endguest
