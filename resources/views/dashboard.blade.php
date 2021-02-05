@@ -2,7 +2,7 @@
 @section('content')
   <div class="contain mx-auto">
     @if($documents->count())
-    <div class="grid grid-cols-12 gap-4">
+    <div class="md:grid md:grid-cols-12 gap-4">
         <div class="col-span-9">
             @foreach ($documents as $document)
                 <div class="border rounded mb-10">
@@ -45,7 +45,7 @@
                             @csrf
                             <button type="submit" class="flex items-center px-3 mr-3 py-1 rounded bg-green-600 text-white hover:bg-green-500">
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-flag"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg></p>
-                                <p class="ml-2">{{__('Mark as Featured Article')}}</p>
+                                <p class="ml-2">{{__('Mark as Featured')}}</p>
                             </button>
                         </form>
                         @else
@@ -53,7 +53,7 @@
                             @csrf
                             <button type="submit" class="flex items-center px-3 mr-3 py-1 rounded bg-gray-700 text-white hover:bg-gray-600">
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-flag"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg></p>
-                                <p class="ml-2">{{__('Un-Mark as Featured Article')}}</p>
+                                <p class="ml-2">{{__('Un-Mark as Featured')}}</p>
                             </button>
                         </form>
                         @endif
@@ -62,7 +62,7 @@
             @endforeach
             {{$documents->links()}}
         </div>
-        <div class="col-span-3">
+        <div class="col-span-3 mx-3 md:mx-0">
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 flex items-center rounded border">
                     <div class="bg-indigo-600 p-2 rounded-l border-none">

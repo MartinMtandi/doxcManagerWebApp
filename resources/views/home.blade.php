@@ -2,7 +2,7 @@
 @section('content')
   <div class="contain mx-auto">
     @if($documents->count())
-    <div class="grid grid-cols-12 gap-8">
+    <div class="md:grid md:grid-cols-12 gap-8">
         <div class="col-span-12 md:col-span-8 lg:col-span-9">
                 @foreach ($documents as $document)
                     <div class="border rounded mb-10 border-light">
@@ -44,7 +44,8 @@
                                 <button type="submit" class="flex items-center px-3 mr-3 py-1 rounded btn-solid">
                                     <p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg></p>
-                                    <p class="ml-2">{{__('Like Article')}}</p>
+                                    <p class="ml-2 hidden md:block">{{__('Like Article')}}</p>
+                                    <p class="ml-2 md:hidden">{{__('Like')}}</p>
                                 </button>
                             </form>
                         </div>
