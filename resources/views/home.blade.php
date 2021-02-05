@@ -64,11 +64,11 @@
                                 <div>
                                     <form action="{{route('document.download', $post)}}" method="post" class="inline">
                                         @csrf
-                                        <button type="submit" name="download" class="text-indigo-600 focus:outline-none px-3 py-1 rounded-full border border-indigo-600 mr-2 text-xs hover:text-white hover:bg-indigo-600">{{__('Download')}}</button>
+                                        <button type="submit" name="download" class="text-indigo-600 mt-2 md:mt-0 focus:outline-none px-3 py-1 rounded-full border border-indigo-600 mr-2 text-xs hover:text-white hover:bg-indigo-600">{{__('Download')}}</button>
                                     </form>
                                     <form action="{{route('document.read', $post)}}" method="post" class="inline">
                                         @csrf
-                                        <button type="submit" name="preview"class="btn-outline focus:outline-none px-3 py-1 rounded-full border mr-2 text-xs">{{__('Like Article')}}</button>
+                                        <button type="submit" name="preview"class="btn-outline focus:outline-none mt-2 md:mt-0 px-3 py-1 rounded-full border mr-2 text-xs">{{__('Like Article')}}</button>
                                     </form>
                                 </div>
                             </div>
@@ -84,11 +84,11 @@
                                 <div>
                                     <form action="{{route('document.download', $promoItem)}}" method="post" class="inline">
                                         @csrf
-                                        <button type="submit" name="download" class="text-indigo-600 focus:outline-none px-3 py-1 rounded-full border border-indigo-600 mr-2 text-xs hover:text-white hover:bg-indigo-600">{{__('Download')}}</button>
+                                        <button type="submit" name="download" class="text-indigo-600 focus:outline-none mt-2 md:mt-0 px-3 py-1 rounded-full border border-indigo-600 mr-2 text-xs hover:text-white hover:bg-indigo-600">{{__('Download')}}</button>
                                     </form>
                                     <form action="{{route('document.read', $promoItem)}}" method="post" class="inline">
                                         @csrf
-                                        <button type="submit" name="preview"class="btn-outline focus:outline-none px-3 py-1 rounded-full border mr-2 text-xs">{{__('Like Article')}}</button>
+                                        <button type="submit" name="preview"class="btn-outline focus:outline-none px-3 mt-2 md:mt-0 py-1 rounded-full border mr-2 text-xs">{{__('Like Article')}}</button>
                                     </form>
                                 </div>
                             </div>
